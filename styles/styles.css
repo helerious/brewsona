@@ -1,0 +1,27 @@
+body{
+    width:100vw;
+    height:100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: blueviolet;
+}
+.container{
+    background-color: beige;
+    width: 90%;
+}
+
+.button-grid{
+    display:grid;
+    width: 100%;
+    align-content: center;
+}
+button{
+    display:block;
+    margin: 5px auto;
+    padding: 10px;
+    width: 90%;
+}
