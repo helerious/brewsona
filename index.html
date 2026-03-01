@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset ="UTF-8"/>
-        <meta name="viewport"  content="width=device-width"/>
-        <link href="styles/styles.css" rel="stylesheet"/>
-        <script defer src="js/code.js"></script>
-        <link rel="icon" type="image/x-icon" href="./images/coffee.webp"/>
-        <title>Brewsona Game</title>
-    </head>
-    <body>
-        <div class="container">
-            <div id="text">How are you today?</div>
-            <div id="image">
-                <img src="images/cat.jpeg" alt="question picture" width="60%">
-            </div>
-            <div id="button-grid">
-                <button class="button">1</button>
-                <button class="button">2</button>
-                <button class="button">3</button>
-                <button class="button">4</button>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script defer src="js/code.js"></script>
+    <link rel="icon" type="image/x-icon" href="./images/coffee.webp" />
+    <title>Brewsona</title>
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1 id="title">Brewsona</h1>
+      </header>
+
+      <p id="progress" class="progress hidden"></p>
+
+      <section id="intro-screen" class="panel">
+        <div class="image-wrap intro-image">
+          <img src="images/cat.jpeg" alt="Brewsona intro image" />
         </div>
-    </body>
+        <button id="start-button" class="button">Play</button>
+      </section>
+
+      <section id="quiz-section" class="hidden">
+        <h2 id="text" class="question"></h2>
+        <div id="image" class="image-wrap">
+          <img
+            id="question-image"
+            src="images/cat.jpeg"
+            alt="Cafe themed visual"
+          />
+        </div>
+        <div id="button-grid" class="button-grid"></div>
+      </section>
+
+      <section id="result-card" class="panel hidden" aria-live="polite">
+        <p class="result-label">Your Brewsona</p>
+        <h2 id="result-type"></h2>
+        <p id="result-drink" class="result-drink"></p>
+        <p id="result-traits"></p>
+        <p id="result-quote" class="result-quote"></p>
+        <p id="result-breakdown" class="result-breakdown"></p>
+        <button id="restart-button" class="button">Play Again</button>
+      </section>
+    </main>
+  </body>
 </html>
